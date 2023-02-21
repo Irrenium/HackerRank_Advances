@@ -10,4 +10,13 @@ WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000;
 --Select All
 SELECT * FROM CITY;
 
+--Select By ID
+
+--Japanese Cities' Attributes
+
+--Japanese Cities' Names
+
 --
+
+
+
