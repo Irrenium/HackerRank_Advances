@@ -18,6 +18,10 @@ SELECT * FROM CITY;
 
 --Weather Observation Station 1
 
+--Weather Observation Station 2
+SELECT ROUND(SUM(LAT_N), 2), ROUND(SUM(LONG_W), 2)
+FROM STATION;
+
 --Weather Observation Station 3
 
 --Weather Observation Station 4
@@ -36,11 +40,38 @@ SELECT * FROM CITY;
 
 --Weather Observation Station 12
 
+--Weather Observation Station 13
+
+--Weather Observation Station 14
+
+--Weather Observation Station 15
+
+--Weather Observation Station 16
+
+--Weather Observation Station 17
+
+--Weather Observation Station 18
+
+--Weather Observation Station 19
+
 --Higher Than 75 Marks
 
 --Employee Names
 
 --Employee Salaries
 
+--Average Population
 
+--Japan Population
 
+--Population Density Difference
+
+--The Blunder
+
+--Top Earners
+
+--Population Census
+
+--African Cities
+
+--Average Population of Each Continent
