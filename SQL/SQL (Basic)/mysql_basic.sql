@@ -62,6 +62,8 @@ SELECT DISTINCT CITY FROM STATION
 WHERE CITY REGEXP '^[^aeiou]|[^aeiou]$';
 
 --Weather Observation Station 12
+SELECT DISTINCT CITY FROM STATION
+WHERE CITY REGEXP '^[^aeiou].*[^aeiou]$';
 
 --Weather Observation Station 13
 
@@ -78,12 +80,22 @@ WHERE CITY REGEXP '^[^aeiou]|[^aeiou]$';
 --Weather Observation Station 19
 
 --Higher Than 75 Marks
+SELECT Name FROM STUDENTS
+WHERE Marks > 75
+ORDER BY RIGHT(Name, 3), ID;
 
 --Employee Names
+SELECT name FROM Employee
+ORDER BY name;
 
 --Employee Salaries
+SELECT name FROM Employee
+WHERE salary > 2000 AND months < 10
+ORDER BY employee_id;
 
 --Average Population
+SELECT FLOOR(AVG(POPULATION))
+FROM CITY;
 
 --Japan Population
 
