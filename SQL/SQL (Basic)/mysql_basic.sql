@@ -98,12 +98,23 @@ SELECT FLOOR(AVG(POPULATION))
 FROM CITY;
 
 --Japan Population
+SELECT SUM(POPULATION) FROM CITY
+WHERE COUNTRYCODE = 'JPN';
 
 --Population Density Difference
+SELECT MAX(POPULATION) - MIN(POPULATION)
+FROM CITY;
 
 --The Blunder
+SELECT CEIL(AVG(Salary) - AVG(REPLACE(SALARY, '0', '')))
+FROM EMPLOYEES;
 
 --Top Earners
+SELECT salary * months AS earnings, COUNT(*)
+FROM Employee
+GROUP BY earnings
+ORDER BY earnings DESC
+LIMIT 1;
 
 --Population Census
 
