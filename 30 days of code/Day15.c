@@ -19,3 +19,4 @@ Node* insert(Node *head,int data)
     }
     return head;
 }
+
