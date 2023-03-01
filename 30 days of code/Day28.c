@@ -27,8 +27,11 @@ int cmp(const void *p1, const void *p2) {
     return mycmp(* (char * const *) p1, * (char * const *) p2);
 }
 
+
+
 char* validate_local_address(char* email) {
     char *ptr;
+
     for (ptr = email; *ptr; ptr++) {
         if (*ptr == '@' && ptr != email) {
             // check that we saw at least one character
@@ -42,9 +45,12 @@ char* validate_local_address(char* email) {
 
 int main(){
     int N; 
+
     scanf("%d",&N);
+    
     char **result = (char **)malloc(N * sizeof(char *));
     int index = 0;
+
     for(int a0 = 0; a0 < N; a0++){
         char* firstName = (char *)malloc(1024 * sizeof(char));
         memset(firstName, 0, 1024);
