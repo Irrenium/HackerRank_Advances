@@ -14,11 +14,15 @@ int main() {
     if(returned[2] > expected[2]) {
         printf("10000\n");
     } else if (returned[1] > expected[1]) {
+
         int months_late = returned[1] - expected[1];
         printf("%d\n", months_late * 500);
+
     } else if (returned[0] > expected[0]) {
+
         int days_late = returned[0] - expected[0];
         printf("%d\n", days_late * 15);
+        
     } else {
         printf("0\n");
     }
