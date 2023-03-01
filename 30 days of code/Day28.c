@@ -1,12 +1,16 @@
 
 #include <math.h>
 #include <stdio.h>
+
 #include <string.h>
 #include <stdlib.h>
+
 #include <assert.h>
 #include <limits.h>
 #include <stdbool.h>
 #include <ctype.h>
+
+
 
 int mycmp(const char *a, const char *b) {
     const char *cp1 = a, *cp2 = b;
@@ -16,6 +20,8 @@ int mycmp(const char *a, const char *b) {
             return 0;
     return ((toupper(*cp1) < toupper(*cp2)) ? -1 : +1);
 } 
+
+
 
 int cmp(const void *p1, const void *p2) {
     return mycmp(* (char * const *) p1, * (char * const *) p2);
