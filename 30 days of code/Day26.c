@@ -22,8 +22,9 @@ int main() {
 
         int days_late = returned[0] - expected[0];
         printf("%d\n", days_late * 15);
-        
+
     } else {
+        
         printf("0\n");
     }
     
