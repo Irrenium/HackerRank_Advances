@@ -1,9 +1,12 @@
 
 
-#include <math.h>
+
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+
+#include <string.h>
+#include <math.h>
+
 #include <assert.h>
 #include <limits.h>
 #include <stdbool.h>
@@ -11,7 +14,7 @@
 int maxvalue(int n, int k) {
     int i, j;
     int res = 0, max_res = 0;
-    
+
     for (i = 1; i <= n; i++) {
         for (j = i+1; j <=n ; j++) {
             int val = i &j;
