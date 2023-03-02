@@ -18,6 +18,7 @@ int mycmp(const char *a, const char *b) {
     for (; toupper(*cp1) == toupper(*cp2); cp1++, cp2++)
         if (*cp1 == '\0')
             return 0;
+            
     return ((toupper(*cp1) < toupper(*cp2)) ? -1 : +1);
 } 
 
@@ -34,6 +35,7 @@ char* validate_local_address(char* email) {
         if (*ptr == '@' && ptr != email) {
             // check that we saw at least one character
             return ptr+1;
+
         } else if (!((*ptr >= 'a' && *ptr <= 'z') || (*ptr == '.'))) {
             return 0;
         }
@@ -58,7 +60,7 @@ int main(){
         
         scanf("%s %s",firstName,emailID);
         int len = strlen(emailID);
-        
+
         if (strlen(firstName)) {
             char *ptr = validate_local_address(emailID);
             if (ptr) {
