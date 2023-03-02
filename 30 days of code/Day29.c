@@ -18,6 +18,7 @@ int maxvalue(int n, int k) {
     for (i = 1; i <= n; i++) {
         for (j = i+1; j <=n ; j++) {
             int val = i &j;
+            
             if (val > max_res && val < k) {
                 max_res = val;
             }
@@ -32,6 +33,7 @@ int main(){
     int a0;
 
     scanf("%d",&t);
+
     for(a0 = 0; a0 < t; a0++){
         int n; 
         int k;
@@ -39,5 +41,6 @@ int main(){
         scanf("%d %d",&n,&k);
         printf("%d\n", maxvalue(n, k));
     }
+
     return 0;
 }
