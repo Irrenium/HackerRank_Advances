@@ -22,11 +22,9 @@ int mycmp(const char *a, const char *b) {
 } 
 
 
-
 int cmp(const void *p1, const void *p2) {
     return mycmp(* (char * const *) p1, * (char * const *) p2);
 }
-
 
 
 char* validate_local_address(char* email) {
