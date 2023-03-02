@@ -58,6 +58,7 @@ int main(){
         
         scanf("%s %s",firstName,emailID);
         int len = strlen(emailID);
+        
         if (strlen(firstName)) {
             char *ptr = validate_local_address(emailID);
             if (ptr) {
